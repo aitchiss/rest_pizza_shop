@@ -1,15 +1,17 @@
 body {
+  background-color: #FFEBDA;
   font-family: Helvetica;
   display: flex;
   flex-flow: column wrap;
 }
 
 nav  {
-  background-color: #0E553C;
+  background-color: #820021;
   padding: 10px;
   color: white;
   display: flex;
   justify-content: flex-end;
+
 }
 
 nav li {
@@ -17,7 +19,8 @@ nav li {
 }
 
 .button {
-  color: white;
+  color: #820021;
+  background-color: white;
   border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
@@ -26,8 +29,8 @@ nav li {
 }
 
 .button:hover{
-  color: #0E553C;
-  background-color: white;
+  color: white;
+  background-color: #820021;
 }
 
 form {
@@ -43,14 +46,14 @@ fieldset {
   
   margin: 20px 0px 20px 0px;
   border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid #820021;
   width: 300px;
   padding: 20px;
   
 }
 
 legend {
-  color: red;
+  color: #820021;
 }
 
 form input {
@@ -74,7 +77,7 @@ form select{
 }
 
 .confirm .btn {
-  background-color: #0E553C;
+  background-color: #820021 ;
   color: white;
   height: 40px;
   font-size: 16px;
@@ -83,7 +86,7 @@ form select{
 }
 
 .confirm .btn:hover{
-  background-color: red;
+  background-color: #4B7F7F;
 
 }
 
@@ -95,14 +98,17 @@ form select{
 }
 
 .container .order{
-  border: 1px solid red;
+  border: 1px solid #820021;
+  color: #820021 ;
   border-radius: 5px;
   margin: 10px;
   padding: 20px;
+  flex-basis: auto;
+  width: 250px;
 }
 
 .order-button{
-  background-color: #0E553C;
+  background-color: #820021;
   color: white;
   border-radius: 5px;
   font-size: 12px;
@@ -112,11 +118,12 @@ form select{
 }
 
 .order-button:hover{
-  background-color: red;
+  background-color: #4B7F7F;
+  color: white;
 }
 
 .confirm-button{
-  background-color: #0E553C;
+  background-color: #820021;
   color: white;
   height: 40px;
   font-size: 16px;
@@ -124,8 +131,9 @@ form select{
   border: none;
 }
 
-.confirm-button:hover{
-  background-color: red;
+.confirm-button:hover {
+  background-color: #4B7F7F;
+  color: white;
 }
 
 .message{
