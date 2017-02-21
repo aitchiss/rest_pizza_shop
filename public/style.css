@@ -1,0 +1,90 @@
+body {
+  font-family: Helvetica;
+}
+
+nav  {
+  background-color: #0E553C;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.button:hover{
+  color: #0E553C;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 10px 10px 20px;
+  
+}
+
+fieldset {
+  
+  margin: 20px 0px 20px 0px;
+  border-radius: 5px;
+  border: 1px solid red;
+  width: 300px;
+  padding: 20px;
+  
+}
+
+legend {
+  color: red;
+}
+
+form input {
+  flex-basis: auto;
+  border-radius: 5px;
+  width: 300px;
+  height: 25px;
+  margin: 10px 0px 10px 0px;
+  font-size: 14px;
+  
+}
+
+form select{
+  flex-basis: auto;
+  border-radius: 5px;
+  width: 300px;
+  height: 25px;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.confirm .btn {
+  background-color: #0E553C;
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+}
+
+.confirm .btn:hover{
+  background-color: red;
+  
+}
+
+
+
+

@@ -1,10 +1,15 @@
 <form method="POST" action="/pizzas"> <!-- method is the HTTP verb, and action is where you're directing it to as per REST -->
+<fieldset>
+  <legend>your details </legend>
   <label for="first-name">First Name: </label>
   <input type="text" name="first_name" id="first-name"/>
 
   <label for="last-name">Last Name:</label>
   <input type="text" name="last_name" id="last-name" />
+</fieldset>
 
+<fieldset>
+  <legend>choose your pizza</legend>
   <label for="pizza-select">Select Pizza:</label>
   <select id="pizza-select" name="topping">
     <option value="Margherita">Margherita</option>
@@ -13,7 +18,9 @@
 
   <label for="quantity">Quantity:</label>
   <input type = "number" min="1" id="quantity" name="quantity" />
+</fieldset>
 
-  <input type="submit" value="Order Pizza"/> <!-- input tags don't take anything between opening and closing, so whatever you put in value attribute is what will be displayed to the user -->
-
+<div class="confirm">
+  <input class="btn" type="submit" value="Order Pizza"/> <!-- input tags don't take anything between opening and closing, so whatever you put in value attribute is what will be displayed to the user -->
+</div>
 </form>
