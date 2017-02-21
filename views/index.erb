@@ -1,7 +1,10 @@
 
+<div class= "container">
 <% @pizzas.each do |pizza| %>
+  <div class="order">
   <p>Name: <%= pizza.pretty_name() %> </p>
   <p>Order: <%= pizza.quantity %> x <%= pizza.topping %></p>
-  <p><a href="/pizzas/<%= pizza.id %>">Manage Order</a></p>
-  <hr />
+  <a class="order-button" href="/pizzas/<%= pizza.id %>">Manage Order</a>
+  </div>
 <% end %>
+</div>

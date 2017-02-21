@@ -1,11 +1,16 @@
 <form method="POST" action="/pizzas/<%= @pizza.id %>">
+<fieldset>
+    <legend>update your details</legend>
 
-<label for="first-name">First Name: </label>
-<input type="text" value = "<%= @pizza.first_name %>" name="first_name" id="first-name"/>
+    <label for="first-name">First Name: </label>
+    <input type="text" value = "<%= @pizza.first_name %>" name="first_name" id="first-name"/>
 
-<label for="last-name">Last Name:</label>
-<input type="text" value="<%= @pizza.last_name %>" name="last_name" id="last-name" />
+    <label for="last-name">Last Name:</label>
+    <input type="text" value="<%= @pizza.last_name %>" name="last_name" id="last-name" />
+</fieldset>
 
+<fieldset>
+    <legend>update your pizza choice</legend>
  <label for="pizza-select">Select Pizza:</label>
   <select id="pizza-select" name="topping">
     <option value="Margherita" 
@@ -27,7 +32,10 @@
 
 <label for="quantity">Quantity:</label>
 <input type = "number" value="<%= @pizza.quantity %>" min="1" id="quantity" name="quantity" />
+</fieldset>
+<div class="confirm">
 
-<input type="submit" value="Update Order"/>
+<input class="confirm-button" type="submit" value="Update Order"/>
+</div>
 
 </form>

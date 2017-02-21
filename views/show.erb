@@ -1,12 +1,16 @@
-<p>Name: <%= @pizza.pretty_name %></p>
-<p>Order: <%= @pizza.quantity %> x <%= @pizza.topping %></p>
-<p>Total price: £<%= @pizza.total %></p>
-
 <form method="POST" action="/pizzas/<%= @pizza.id %>/delete">
-<input type ="submit" value="Delete Order" />
+  <fieldset>
+    <legend>order details</legend>
+      <p>Name: <%= @pizza.pretty_name %></p>
+      <p>Order: <%= @pizza.quantity %> x <%= @pizza.topping %></p>
+      <p>Total price: £<%= @pizza.total %></p>
+  </fieldset>
+
+
+<input class="confirm-button" type ="submit" value="Delete Order" />
 </form>
 
 <form method="GET" action="/pizzas/<%= @pizza.id %>/edit">
-<!-- should have just used a link! rather than a form and method etc etc -->
-<input type="submit" value="Edit Order" />
+<input class="confirm-button" type="submit" value="Edit Order" />
 </form>
+

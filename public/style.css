@@ -1,5 +1,7 @@
 body {
   font-family: Helvetica;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 nav  {
@@ -82,8 +84,59 @@ form select{
 
 .confirm .btn:hover{
   background-color: red;
+
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   
 }
+
+.container .order{
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.order-button{
+  background-color: #0E553C;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  text-decoration: none;
+  float: right;
+}
+
+.order-button:hover{
+  background-color: red;
+}
+
+.confirm-button{
+  background-color: #0E553C;
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+}
+
+.confirm-button:hover{
+  background-color: red;
+}
+
+.message{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+
+
+
 
 
 
