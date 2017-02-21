@@ -1,0 +1,42 @@
+<form method="POST" action="/pizzas/<%= @pizza.id %>">
+
+<label for="first-name">First Name: </label>
+<input type="text" value = "<%= @pizza.first_name %>" name="first_name" id="first-name"/>
+
+<label for="last-name">Last Name:</label>
+<input type="text" value="<%= @pizza.last_name %>" name="last_name" id="last-name" />
+
+ <label for="pizza-select">Select Pizza:</label>
+  <select id="pizza-select" name="topping">
+    <option value="Margherita" 
+    <% if @pizza.topping == "Margherita"%>
+      <%= selected = "selected" %> 
+    <%end%>
+    >Margherita</option>
+    <!-- didn't need to have equals anything for selected - look at solution for neater way to write this-->
+
+    <option value="Calzone"
+    <% if @pizza.topping == "Calzone"%>
+      <%= selected = "selected" %>
+    <%end%>
+    >Calzone</option>
+
+    <option value="Italian Sausage"
+    <% if @pizza.topping == "Italian Sausage"%>
+      <%= selected = "selected" %>
+    <%end%>
+    >Italian Sausage</option>
+    <option value="Pepperoni"
+    <% if @pizza.topping == "Pepperoni"%>
+      <%= selected = "selected" %>
+    <%end%>
+
+    >Pepperoni</option>
+  </select>
+
+<label for="quantity">Quantity:</label>
+<input type = "number" value="<%= @pizza.quantity %>" min="1" id="quantity" name="quantity" />
+
+<input type="submit" value="Update Order"/>
+
+</form>
