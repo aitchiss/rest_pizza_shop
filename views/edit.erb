@@ -9,28 +9,19 @@
  <label for="pizza-select">Select Pizza:</label>
   <select id="pizza-select" name="topping">
     <option value="Margherita" 
-    <% if @pizza.topping == "Margherita"%>
-      <%= selected = "selected" %> 
-    <%end%>
+    <%= "selected" if @pizza.topping == "Margherita"%>
     >Margherita</option>
-    <!-- didn't need to have equals anything for selected - look at solution for neater way to write this-->
 
     <option value="Calzone"
-    <% if @pizza.topping == "Calzone"%>
-      <%= selected = "selected" %>
-    <%end%>
+    <%= "selected" if @pizza.topping == "Calzone"%>
     >Calzone</option>
 
     <option value="Italian Sausage"
-    <% if @pizza.topping == "Italian Sausage"%>
-      <%= selected = "selected" %>
-    <%end%>
+    <%= "selected" if @pizza.topping == "Italian Sausage"%>
     >Italian Sausage</option>
-    <option value="Pepperoni"
-    <% if @pizza.topping == "Pepperoni"%>
-      <%= selected = "selected" %>
-    <%end%>
 
+    <option value="Pepperoni"
+    <%= "selected" if @pizza.topping == "Pepperoni"%>
     >Pepperoni</option>
   </select>
 
